@@ -7,7 +7,7 @@ $batFile = Join-Path $scriptDir "run_comfyui.bat"
 Write-Host "Starting ComfyUI from $batFile"
 
 # Start process detached - survives SSH disconnection
-Start-Process -FilePath "cmd.exe" -ArgumentList "/c `"$batFile`"" -WindowStyle Hidden -NoNewWindow
+Start-Process -FilePath "cmd.exe" -ArgumentList "/c `"$batFile`"" -WindowStyle Hidden
 
 Write-Host "ComfyUI started in background"
 Write-Host ""
